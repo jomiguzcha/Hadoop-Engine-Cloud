@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SSH Command Executor</title>
+</head>
+<body>
+	<h1>SSH Command Executor</h1>
+	<form method="POST">
+		<label for="command">Enter a command:</label>
+		<input type="text" name="command" id="command">
+		<button type="submit">Execute</button>
+	</form>
+	{% if output %}
+		<h2>Output:</h2>
+		<pre>{{ output }}</pre>
+	{% endif %}
+</body>
+</html>
