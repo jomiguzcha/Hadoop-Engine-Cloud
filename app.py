@@ -12,8 +12,9 @@ def index():
 def execute_command():
     # Get the command from the form
     word = request.form['command']
-    preview_command = "java PageRankMain "
-    command = preview_command + word
+    #preview_command = "java PageRankMain "
+    #command = preview_command + word
+    command = word
 
     # Replace with your instance's IP address or hostname
     hostname = '34.136.208.229'
